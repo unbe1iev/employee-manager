@@ -17,8 +17,7 @@ import static java.lang.System.out;
 public class Main {
 
     public static boolean verifyPesel(String p) {
-        if ((p.charAt(0) + 3 * p.charAt(1)  + 7 * p.charAt(2)  + 9 * p.charAt(3)  + p.charAt(4)  + 3 * p.charAt(5)  + 7 * p.charAt(6)  + 9 * p.charAt(7)  + p.charAt(8)  + 3 * p.charAt(9)  + p.charAt(10)) % 10 == 0) return true;
-        else return false;
+        return (p.charAt(0) + 3 * p.charAt(1) + 7 * p.charAt(2) + 9 * p.charAt(3) + p.charAt(4) + 3 * p.charAt(5) + 7 * p.charAt(6) + 9 * p.charAt(7) + p.charAt(8) + 3 * p.charAt(9) + p.charAt(10)) % 10 == 0;
     }
 
     public static void saveEmployee(String argSave, Object obj) throws IOException {

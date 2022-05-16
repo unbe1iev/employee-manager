@@ -186,6 +186,7 @@ class MainTest<T> {
         int numberOfZIPFiles = 0;
         int numberOfGZIPFiles = 0;
 
+        assert files != null;
         for(File file : files) {
             String fileName = file.toString();
 
